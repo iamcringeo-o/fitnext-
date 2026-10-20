@@ -34,24 +34,29 @@ export function FitnessMistakesPage() {
 
   const faqs: FaqItem[] = [
     {
+      question: 'What are common fitness mistakes beginners make?',
+      answer:
+        'Common mistakes include doing too much too soon, ignoring recovery, using poor technique, and expecting immediate results. Addressing these early prevents burnout and injury.'
+    },
+    {
       question: 'How do I know if I am doing too much too soon?',
       answer:
         'Signs of doing too much include extreme muscle soreness lasting more than 72 hours, trouble sleeping, persistent daytime fatigue, irritability, a drop in enthusiasm, or nagging joint aches in your knees or shoulders. If you notice these symptoms, reduce your weekly training volume by 30–50%.'
     },
     {
-      question: 'Is it okay to work out when you are slightly tired?',
+      question: 'How long should I stick with a beginner workout plan before changing exercises?',
       answer:
-        'Yes, mild everyday tiredness from work or mental fatigue often disappears after a 5-minute warm-up and light exercise. However, if your tiredness is from acute sleep deprivation, illness, or fever, prioritize rest instead of forcing a hard workout.'
-    },
-    {
-      question: 'How long should I stick with a beginner workout routine before changing it?',
-      answer:
-        'Stick with the same core routine for at least 8 to 12 weeks. Changing exercises every single workout prevents your nervous system from mastering movement patterns and makes it impossible to measure steady strength progression.'
+        'Stick with the same core beginner workout plan for at least 8 to 12 weeks. Changing exercises every single workout prevents your nervous system from mastering movement patterns and makes it impossible to measure steady strength progression.'
     },
     {
       question: 'What should I do if an exercise causes discomfort in my joints?',
       answer:
         'Stop that specific exercise immediately. Check your setup: feet width, knee tracking, and posture. If discomfort persists, substitute an easier regression (such as chair squats instead of free bodyweight squats) or omit that movement entirely and consult a certified physical therapist.'
+    },
+    {
+      question: 'Is it dangerous for beginners to work out while exhausted or sleep-deprived?',
+      answer:
+        'Yes. Acute sleep deprivation significantly impairs neuromuscular coordination and reaction time, drastically increasing your risk of dropped weights, joint sprains, or poor posture during squats and push-ups. When truly exhausted, prioritize 7–9 hours of sleep over a workout.'
     }
   ];
 
@@ -114,7 +119,7 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Going directly from sitting at a computer desk into heavy squats or brisk sprints catches cold muscle tissue unprepared. Cold tendons are less elastic, leading to preventable strains in the lower back, hamstrings, and shoulders.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Dedicate 5 full minutes to dynamic mobility (arm swings, cat-cow spine flexion, hip circles, and marching). Refer to the warm-up protocol in our <Link to="/beginner-workout-guide#why-warmups-matter" className="underline font-semibold hover:text-emerald-900">Beginner Workout Guide</Link>.
+          <strong className="text-emerald-950">Practical Solution:</strong> Dedicate 5 full minutes to dynamic mobility (arm swings, cat-cow spine flexion, hip circles, and marching). Refer to the warm-up protocol in our <Link to="/beginner-workout-guide#why-warmups-matter" className="underline font-semibold hover:text-emerald-900">beginner workout guide</Link>.
         </div>
       </section>
 
@@ -204,7 +209,7 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Slashing calories to 1,000 per day or completely eliminating entire macronutrient groups leaves you exhausted, irritable, and prone to rebound binge-eating.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Adopt our <Link to="/beginner-nutrition-guide#building-a-balanced-plate" className="underline font-semibold hover:text-emerald-900">Balanced Plate Framework</Link>. Eat wholesome carbs, lean proteins, and healthy fats that fuel your activity.
+          <strong className="text-emerald-950">Practical Solution:</strong> Instead of crash dieting, explore our guide on <Link to="/beginner-nutrition-guide" className="underline font-semibold hover:text-emerald-900">nutrition for beginners</Link> and adopt a sustainable balanced plate. Eat wholesome carbs, lean proteins, and healthy fats that fuel your activity.
         </div>
       </section>
 
@@ -240,7 +245,7 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Switching your workout routine every week prevents neuromuscular adaptation. You never become skilled at squats, push-ups, or hinges, making it impossible to apply progressive overload.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Pick one simple full-body routine (like the 3-day split in our workout guide) and stick to it for at least 8 to 12 weeks before introducing new variations.
+          <strong className="text-emerald-950">Practical Solution:</strong> Pick one simple full-body routine (like the 3-day split in our <Link to="/beginner-workout-guide" className="underline font-semibold hover:text-emerald-900">beginner workout guide</Link>) and stick to it for at least 8 to 12 weeks before introducing new variations.
         </div>
       </section>
 

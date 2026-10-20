@@ -47,7 +47,7 @@ export function Footer() {
                   to="/beginner-nutrition-guide"
                   className="text-stone-400 hover:text-emerald-400 transition-colors"
                 >
-                  Beginner Nutrition Guide
+                  Nutrition for Beginners
                 </Link>
               </li>
               <li>
@@ -55,7 +55,7 @@ export function Footer() {
                   to="/fitness-mistakes-beginners"
                   className="text-stone-400 hover:text-emerald-400 transition-colors"
                 >
-                  10 Fitness Mistakes to Avoid
+                  Fitness Mistakes Beginners Should Avoid
                 </Link>
               </li>
               <li>

@@ -58,7 +58,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
             to={article.url}
             className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 group-hover:text-emerald-600 transition-colors"
           >
-            <span>Read Complete Guide</span>
+            <span>Read {article.title}</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

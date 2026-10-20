@@ -10,31 +10,36 @@ import { ArrowRight, CheckCircle2, Dumbbell, Apple, Heart, Calendar, Sparkles } 
 export function HomePage() {
   const homeFaqs: FaqItem[] = [
     {
-      question: 'How should a beginner start exercising?',
+      question: 'How should a beginner start their fitness journey?',
       answer:
-        'Start with simple bodyweight movements, light walking, and gentle mobility work 2 to 3 days per week. Focus on learning proper form first rather than lifting heavy weights or working to exhaustion. Begin with 20 to 30 minutes per session, choose comfortable athletic footwear, stay hydrated, and give your body at least one full day of rest between strength workouts.'
+        'Start with manageable physical activity, balanced meals, sufficient sleep, and a routine you can maintain consistently. Focus on creating positive daily habits like 20–30 minutes of gentle exercise and daily walking before worrying about advanced techniques or heavy weights.'
+    },
+    {
+      question: 'What are the most essential fitness tips for beginners?',
+      answer:
+        'Prioritize consistency over intensity, learn proper movement mechanics before adding resistance, prioritize 7 to 9 hours of sleep, and stay well hydrated. Most importantly, track personal habits rather than comparing your Day 1 to someone else’s Year 5.'
     },
     {
       question: 'How many days a week should beginners work out?',
       answer:
-        'For most complete beginners, 3 non-consecutive days per week (such as Monday, Wednesday, and Friday) of full-body exercise is the sweet spot. This allows your muscles, tendons, and central nervous system 48 hours to recover and adapt, while leaving 2 to 3 days for light daily movement like brisk walking.'
+        'For most complete beginners, 3 non-consecutive days per week (such as Monday, Wednesday, and Friday) of full-body exercise is the sweet spot. This allows your muscles, tendons, and central nervous system 48 hours to recover and adapt, while leaving other days for light walking.'
     },
     {
-      question: 'Do beginners need supplements?',
+      question: 'Can beginners exercise and build strength at home?',
       answer:
-        'No. Beginners do not need protein powders, pre-workouts, fat burners, or complex supplement regimens. You can obtain all the protein, energy, vitamins, and minerals you need from wholesome, balanced grocery foods like poultry, eggs, fish, beans, tofu, whole grains, fruits, vegetables, and plenty of water.'
+        'Yes, absolutely. You do not need a commercial gym membership or expensive machines to build a strong foundation. Basic movements like chair squats, wall push-ups, floor glute bridges, and brisk neighborhood walks build substantial strength and cardiovascular endurance right at home.'
     },
     {
-      question: 'Can beginners exercise at home?',
+      question: 'Do beginners need supplements to make progress?',
       answer:
-        'Yes, absolutely. You do not need a commercial gym membership or expensive machines to build a strong foundation. Basic exercises like chair squats, wall push-ups, floor glute bridges, step-ups, and brisk neighborhood walks build substantial strength and cardiovascular endurance right from your living room.'
+        'No. Beginners do not need protein powders, pre-workouts, fat burners, or complex supplement regimens. You can obtain all the protein, energy, vitamins, and minerals you need from wholesome, balanced grocery foods like poultry, eggs, fish, beans, tofu, whole grains, vegetables, and water.'
     }
   ];
 
   useSEO({
-    title: 'FitStart – Beginner Fitness Guide',
+    title: 'FitStart – Beginner Fitness Guide & Fitness Tips for Beginners',
     description:
-      "Your beginner's guide to fitness. Discover practical workout plans, nutrition essentials, and habits for a healthy, sustainable fitness journey.",
+      'Discover our complete beginner fitness guide with practical fitness tips for beginners. Learn safe starting workouts, balanced nutrition, and healthy habits.',
     path: '/',
     image: heroImage,
     type: 'website',
@@ -52,7 +57,7 @@ export function HomePage() {
             {/* Left Column: Hero Copy */}
             <div className="lg:col-span-7 space-y-6">
               
-              {/* Quiet Text Kicker - Anti-Slop (No Pill) */}
+              {/* Quiet Text Kicker */}
               <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700 tracking-wider uppercase">
                 <span>FitStart Educational Platform</span>
                 <span aria-hidden="true">·</span>
@@ -64,9 +69,9 @@ export function HomePage() {
                 Your Beginner’s Guide to Fitness
               </h1>
 
-              {/* Supporting text */}
+              {/* Supporting text with natural keyword integration */}
               <p className="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl font-normal">
-                Beginners can learn workouts, nutrition, and healthy habits through simple, practical guides. No extreme diets, no confusing fitness jargon—just clear steps to build lifelong physical health safely.
+                Discover our comprehensive <strong>beginner fitness guide</strong> filled with actionable <strong>fitness tips for beginners</strong>. Learn safe starting workouts, balanced nutrition, and sustainable habits through simple, practical guides.
               </p>
 
               {/* Action Buttons */}
@@ -143,7 +148,7 @@ export function HomePage() {
                 At FitStart, we believe that fitness is a long-term skill, not a 30-day punishment. You don’t need two hours in the gym each day, nor do you need unproven supplements or starvation diets. All you need is a manageable weekly structure, safe movement patterns, and balanced nutrition that fuels your daily life.
               </p>
               <p>
-                Whether you haven’t exercised in years or you’re picking up your very first pair of light dumbbells, our four-part curriculum is built to give you confidence from day one.
+                Whether you haven’t exercised in years or you’re picking up your very first pair of light dumbbells, our four-part curriculum is built to give you confidence from day one. Follow our structured <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">beginner workout guide</Link>, discover sustainable <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">nutrition for beginners</Link>, and review critical <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950">fitness mistakes beginners should avoid</Link>.
               </p>
             </div>
           </div>
@@ -212,7 +217,7 @@ export function HomePage() {
                 to="/beginner-workout-guide"
                 className="text-sm font-semibold text-stone-950 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors"
               >
-                <span>Read the workout guide</span>
+                <span>Read the beginner workout guide</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -237,7 +242,7 @@ export function HomePage() {
                 to="/beginner-nutrition-guide"
                 className="text-sm font-semibold text-stone-950 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors"
               >
-                <span>Read the nutrition guide</span>
+                <span>Explore nutrition for beginners</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -262,7 +267,7 @@ export function HomePage() {
                 to="/fitness-mistakes-beginners"
                 className="text-sm font-semibold text-stone-950 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors"
               >
-                <span>Read mistakes to avoid</span>
+                <span>Avoid fitness mistakes beginners make</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

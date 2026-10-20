@@ -53,14 +53,14 @@ export function WorkoutGuidePage() {
 
   const faqs: FaqItem[] = [
     {
-      question: 'How long should a beginner workout last?',
+      question: 'How many days a week should a beginner work out?',
       answer:
-        'A comprehensive beginner workout typically lasts between 25 and 40 minutes, including a 5-minute dynamic warm-up, 20 to 25 minutes of strength movements with rest breaks, and a brief cool-down. More is not better when you are first adapting.'
+        'Many beginners can start with two or three planned workout sessions per week and gradually adjust based on recovery and ability. A 3-day full-body schedule on non-consecutive days (like Monday, Wednesday, and Friday) gives your muscles and joints the essential 48 hours needed to adapt.'
     },
     {
-      question: 'Should beginners feel sore after every workout?',
+      question: 'How long should a beginner workout session last?',
       answer:
-        'No. Mild muscle soreness (delayed onset muscle soreness or DOMS) can happen when trying new movements, but feeling exhausted or so sore that you cannot move comfortably indicates you did too much too soon. Soreness is not a badge of honor or an accurate measure of progress.'
+        'A comprehensive beginner workout typically lasts between 25 and 40 minutes, including a 5-minute dynamic warm-up, 20 to 25 minutes of strength movements with rest breaks, and a brief cool-down. More is not better when you are first adapting.'
     },
     {
       question: 'What if I cannot do a full squat or push-up?',
@@ -68,9 +68,14 @@ export function WorkoutGuidePage() {
         'That is completely normal. Fitness is about finding the regression that meets your current strength. If bodyweight squats are difficult, use a sturdy dining chair to perform chair sit-to-stands. If floor push-ups strain your shoulders, perform wall push-ups or counter-top push-ups until strength develops.'
     },
     {
-      question: 'When is the best time of day for a beginner to exercise?',
+      question: 'Should beginners feel sore after every workout to build muscle?',
       answer:
-        'The best time to work out is simply the time you can execute consistently week after week. Whether that is 7:00 AM before work, during a lunch break, or at 5:30 PM, your consistency matters far more than metabolic circadian differences.'
+        'No. Mild muscle soreness (DOMS) is common when starting unfamiliar exercises, but crippling soreness is a warning sign that you did too much too soon. Progressive consistency and joint comfort are much better indicators of success than soreness.'
+    },
+    {
+      question: 'What basic equipment do I need for this beginner workout plan?',
+      answer:
+        'You can execute this entire beginner workout plan using bodyweight alone. To progress over time, a single light-to-medium resistance band or a small pair of 5 to 10 lb dumbbells is more than enough for upper body pulling and rowing.'
     }
   ];
 
@@ -505,6 +510,9 @@ export function WorkoutGuidePage() {
             </p>
           </div>
         </div>
+        <p className="text-sm text-stone-700">
+          Remember that muscle recovery also depends on what you eat. Read our companion guide on <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">nutrition for beginners</Link> to learn how balanced meals supply the necessary protein, complex carbs, and hydration.
+        </p>
       </section>
 
       {/* SECTION 7 */}
@@ -559,7 +567,7 @@ export function WorkoutGuidePage() {
                 <strong>Warning signs:</strong> Sharp joint pain, clicking accompanied by ache, dizziness, lightheadedness, chest tightness, or sudden shooting nerve sensations. If any of these occur, stop immediately.
               </p>
               <p className="text-xs text-amber-900 pt-1">
-                Also review our companion guide: <Link to="/fitness-mistakes-beginners" className="underline font-semibold hover:text-amber-950">10 Fitness Mistakes Beginners Should Avoid</Link> to stay protected from common training errors.
+                Also review our companion guide on <Link to="/fitness-mistakes-beginners" className="underline font-semibold hover:text-amber-950">fitness mistakes beginners should avoid</Link> to stay protected from common training errors.
               </p>
             </div>
           </div>

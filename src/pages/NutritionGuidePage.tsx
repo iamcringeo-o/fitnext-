@@ -38,12 +38,17 @@ export function NutritionGuidePage() {
 
   const faqs: FaqItem[] = [
     {
+      question: 'What should beginners eat for fitness?',
+      answer:
+        'Focus on balanced meals containing protein, carbohydrates, healthy fats, fruits, and vegetables, while adapting portions to individual needs. Aim for a palm-sized portion of protein, a cupped hand of complex carbs, half a plate of vegetables, and a thumb of healthy fats.'
+    },
+    {
       question: 'Do beginners need to count every single calorie?',
       answer:
         'No. For the majority of beginners, obsessively counting calories or weighing food can create unnecessary stress and burnout. Instead, start by practicing the balanced plate method (1/2 veggies, 1/4 protein, 1/4 complex carbohydrates) and paying attention to your natural hunger and fullness cues.'
     },
     {
-      question: 'Do I have to drink a protein shake right after my workout?',
+      question: 'Do I have to drink a protein shake immediately after my workout?',
       answer:
         'No. The concept of an urgent 30-minute "anabolic window" where you must slam a protein shake is largely a marketing myth. As long as you consume a balanced meal containing 20 to 30 grams of protein within 1 to 2 hours before or after your session, your body has all the amino acids it needs for recovery.'
     },
@@ -53,9 +58,9 @@ export function NutritionGuidePage() {
         'Carbohydrates are your body and brain’s preferred source of energy for strength training and cardiovascular exercise. Complex carbohydrates like oats, sweet potatoes, brown rice, and berries provide lasting stamina, fiber, and B vitamins.'
     },
     {
-      question: 'How do I know if I am drinking enough water?',
+      question: 'How can vegetarian beginners easily hit their daily protein goals?',
       answer:
-        'The simplest indicator is the color of your urine. It should ideally be a pale straw or lemonade color. If it is dark yellow or amber, increase your water intake. If it is completely clear all day, you may be drinking more than necessary and flushing out electrolytes.'
+        'Vegetarian beginners can easily achieve adequate protein intake by incorporating Greek yogurt, whole eggs, firm tofu, tempeh, edamame, lentils, and chickpeas into their daily meals without needing specialized supplements.'
     }
   ];
 
@@ -432,7 +437,7 @@ export function NutritionGuidePage() {
           Nutrition Habits That Support Exercise Recovery
         </h2>
         <p>
-          Recovery begins the moment your workout ends. Consuming a source of quality protein paired with carbohydrates within 1 to 2 hours helps initiate muscle repair and restock glycogen stores.
+          Recovery begins the moment your workout ends. Consuming a source of quality protein paired with carbohydrates within 1 to 2 hours helps initiate muscle repair and restock glycogen stores. To see how recovery nutrition pairs with weekly training, follow the schedule in our <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">beginner workout guide</Link>.
         </p>
         <p>
           Avoid skipping dinner after an evening workout in the false belief that going to bed starving burns more fat. In reality, under-fueling impairs sleep quality, spikes the stress hormone cortisol, and can leave you sluggish the next morning.
@@ -466,7 +471,7 @@ export function NutritionGuidePage() {
         </div>
 
         <p className="text-sm text-stone-600 pt-2">
-          Want to ensure you aren't making common training or recovery mistakes? Check out our guide on <Link to="/fitness-mistakes-beginners" className="underline font-semibold text-emerald-800 hover:text-emerald-950">10 Fitness Mistakes Beginners Should Avoid</Link>.
+          Want to ensure you aren't making common training or recovery mistakes? Check out our complete guide on <Link to="/fitness-mistakes-beginners" className="underline font-semibold text-emerald-800 hover:text-emerald-950">fitness mistakes beginners should avoid</Link>.
         </p>
       </section>
     </ArticleLayout>

@@ -10,8 +10,8 @@ import { ArrowLeft } from 'lucide-react';
 function AppContent() {
   const { path, navigate } = useRouter();
 
-  // Normalize path without trailing slashes
-  const cleanPath = path === '/' ? '/' : path.replace(/\/$/, '');
+  // Normalize path without trailing slashes and lowercase
+  const cleanPath = path === '/' ? '/' : path.toLowerCase().replace(/\/$/, '');
 
   const renderCurrentPage = () => {
     switch (cleanPath) {

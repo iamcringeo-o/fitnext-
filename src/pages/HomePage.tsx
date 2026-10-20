@@ -76,13 +76,13 @@ export function HomePage() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                <a
-                  href="#featured-guides"
+                <Link
+                  to="/#featured-guides"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-stone-900 rounded-lg hover:bg-emerald-600 transition-colors shadow-sm focus-visible:outline-2 focus-visible:outline-emerald-500 whitespace-nowrap"
                 >
                   <span>Explore Fitness Guides</span>
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
                 <Link
                   to="/beginner-workout-guide"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-stone-900 bg-white border border-stone-300 rounded-lg hover:bg-stone-100 hover:border-stone-400 transition-colors shadow-xs focus-visible:outline-2 focus-visible:outline-emerald-500 whitespace-nowrap"

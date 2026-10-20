@@ -63,7 +63,7 @@ export function Footer() {
                   to="/"
                   className="text-stone-400 hover:text-emerald-400 transition-colors"
                 >
-                  Fitness Starting Roadmap
+                  Fitness Starting Roadmap (Home)
                 </Link>
               </li>
             </ul>

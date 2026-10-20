@@ -4,7 +4,7 @@ import type { ArticleMeta, FaqItem, TableOfContentsItem } from '../types.ts';
 import { FAQSection } from './FAQSection.tsx';
 import { ArticleCard } from './ArticleCard.tsx';
 import { ARTICLES } from '../data/articles.ts';
-import { ChevronRight, Clock, Calendar, CheckCircle2, List, ArrowRight } from 'lucide-react';
+import { ChevronRight, Clock, Calendar, CheckCircle2, List, ArrowRight, ArrowLeft } from 'lucide-react';
 
 interface ArticleLayoutProps {
   article: ArticleMeta;
@@ -56,7 +56,9 @@ export function ArticleLayout({
             <ChevronRight className="w-3.5 h-3.5 text-stone-400" />
           </li>
           <li>
-            <span className="text-stone-500">Guides</span>
+            <Link to="/#featured-guides" className="text-stone-500 hover:text-stone-950 transition-colors">
+              Guides
+            </Link>
           </li>
           <li>
             <ChevronRight className="w-3.5 h-3.5 text-stone-400" />
@@ -232,6 +234,24 @@ export function ArticleLayout({
                 {otherArticles.map((rel) => (
                   <ArticleCard key={rel.slug} article={rel} />
                 ))}
+              </div>
+
+              {/* Navigation Back to Homepage */}
+              <div className="mt-10 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <Link
+                  to="/"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-emerald-700 transition-colors"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  <span>Return to FitStart Homepage</span>
+                </Link>
+                <Link
+                  to={nextArticle.url}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:text-emerald-900 transition-colors"
+                >
+                  <span>Next Guide: {nextArticle.title}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </section>
           </main>

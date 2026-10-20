@@ -1,0 +1,6 @@
+{
+  "name": "FitStart – Beginner Fitness Guide",
+  "description": "Complete beginner fitness guide with practical workout routines, nutrition foundations, habit-building strategies, and common mistakes to avoid.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

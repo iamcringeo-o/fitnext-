@@ -12,6 +12,25 @@ interface SEOProps {
   publishedTime?: string;
 }
 
+function extractPlainText(node: unknown): string {
+  if (node == null || typeof node === 'boolean') {
+    return '';
+  }
+  if (typeof node === 'string' || typeof node === 'number') {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(extractPlainText).join('');
+  }
+  if (typeof node === 'object' && node !== null && 'props' in node) {
+    const props = (node as { props?: { children?: unknown } }).props;
+    if (props && props.children) {
+      return extractPlainText(props.children);
+    }
+  }
+  return '';
+}
+
 export function useSEO({
   title,
   description,
@@ -116,14 +135,24 @@ export function useSEO({
     if (faqs && faqs.length > 0) {
       graph.push({
         '@type': 'FAQPage',
-        mainEntity: faqs.map((faq) => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer
+        mainEntity: faqs.map((faq) => {
+          let plainAnswer = '';
+          if (faq.plainAnswer) {
+            plainAnswer = faq.plainAnswer;
+          } else if (typeof faq.answer === 'string') {
+            plainAnswer = faq.answer;
+          } else {
+            plainAnswer = extractPlainText(faq.answer);
           }
-        }))
+          return {
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: plainAnswer.replace(/\s+/g, ' ').trim()
+            }
+          };
+        })
       });
     }
 
@@ -139,6 +168,10 @@ export function useSEO({
       scriptTag.type = 'application/ld+json';
       document.head.appendChild(scriptTag);
     }
-    scriptTag.textContent = JSON.stringify(structuredData);
+    try {
+      scriptTag.textContent = JSON.stringify(structuredData);
+    } catch (err) {
+      console.warn('Could not serialize JSON-LD structured data', err);
+    }
   }, [title, description, path, image, type, breadcrumbs, faqs, publishedTime]);
 }

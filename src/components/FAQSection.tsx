@@ -72,7 +72,7 @@ export function FAQSection({
                     aria-labelledby={questionId}
                     className="mt-3 text-stone-600 text-sm sm:text-base leading-relaxed pr-8"
                   >
-                    <p>{faq.answer}</p>
+                    <div>{faq.answer}</div>
                   </div>
                 )}
               </div>

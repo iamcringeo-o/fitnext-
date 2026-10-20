@@ -1,3 +1,5 @@
+import type React from 'react';
+
 export interface ArticleMeta {
   slug: string;
   url: string;
@@ -16,7 +18,8 @@ export interface ArticleMeta {
 
 export interface FaqItem {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
+  plainAnswer?: string;
 }
 
 export interface TableOfContentsItem {

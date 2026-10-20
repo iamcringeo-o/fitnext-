@@ -39,8 +39,15 @@ export function NutritionGuidePage() {
   const faqs: FaqItem[] = [
     {
       question: 'What should beginners eat for fitness?',
-      answer:
-        'Focus on balanced meals containing protein, carbohydrates, healthy fats, fruits, and vegetables, while adapting portions to individual needs. Aim for a palm-sized portion of protein, a cupped hand of complex carbs, half a plate of vegetables, and a thumb of healthy fats.'
+      answer: (
+        <>
+          Focus on balanced meals containing protein, carbohydrates, healthy fats, fruits, and vegetables, while adapting portions to individual needs. To learn how this nutrition directly fuels structured movement, pair your meals with our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          .
+        </>
+      ) as any
     },
     {
       question: 'Do beginners need to count every single calorie?',
@@ -49,8 +56,15 @@ export function NutritionGuidePage() {
     },
     {
       question: 'Do I have to drink a protein shake immediately after my workout?',
-      answer:
-        'No. The concept of an urgent 30-minute "anabolic window" where you must slam a protein shake is largely a marketing myth. As long as you consume a balanced meal containing 20 to 30 grams of protein within 1 to 2 hours before or after your session, your body has all the amino acids it needs for recovery.'
+      answer: (
+        <>
+          No. The concept of an urgent 30-minute "anabolic window" where you must slam a protein shake is largely a marketing myth. As long as you consume a balanced meal containing 20 to 30 grams of protein within 1 to 2 hours before or after your session, your body has all the amino acids it needs for recovery. Stressing over rigid, stressful feeding rules is another of the{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          .
+        </>
+      ) as any
     },
     {
       question: 'Are carbohydrates bad for you when trying to get fit?',
@@ -97,10 +111,18 @@ export function NutritionGuidePage() {
           What Balanced Nutrition Really Means
         </h2>
         <p>
-          Diet culture often teaches beginners that eating for fitness is about deprivation: cutting carbs to zero, skipping meals, or eating bland chicken breasts out of plastic containers. This approach fails almost 100% of the time because it is physically exhausting and mentally unsustainable.
+          Diet culture often teaches beginners that eating for fitness is about deprivation: cutting carbs to zero, skipping meals, or eating bland chicken breasts out of plastic containers. Falling into extreme, restrictive crash diets is one of the classic{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          {' '}because it is physically exhausting and mentally unsustainable.
         </p>
         <p>
-          At FitStart, <strong>balanced nutrition</strong> means eating in a way that fuels your physical activity, supports deep restorative sleep, provides steady daily energy, and allows for cultural and social enjoyment of food. Individual nutritional requirements vary significantly based on your age, body composition, current activity levels, biological sex, and personal health background.
+          At FitStart, <strong>balanced nutrition</strong> means eating in a way that fuels your physical activity—such as the strength training routines detailed in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          —supports deep restorative sleep, provides steady daily energy, and allows for cultural and social enjoyment of food. Individual nutritional requirements vary significantly based on your age, body composition, current activity levels, biological sex, and personal health background.
         </p>
       </section>
 
@@ -123,7 +145,11 @@ export function NutritionGuidePage() {
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-bold text-stone-900 mb-1">Carbohydrates (The Primary Fuel)</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              Stored in muscles and liver as glycogen. During resistance training and brisk walking, carbohydrates provide rapid, efficient cellular energy so you don’t feel sluggish.
+              Stored in muscles and liver as glycogen. During resistance training sessions like the ones in our{' '}
+              <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                beginner workout guide
+              </Link>
+              {' '}and brisk walking, carbohydrates provide rapid, efficient cellular energy so you don’t feel sluggish.
             </p>
           </div>
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
@@ -215,7 +241,11 @@ export function NutritionGuidePage() {
           How to Build a Balanced Plate
         </h2>
         <p>
-          Instead of weighing every gram on a digital kitchen scale, use the evidence-based <strong>Balanced Plate Rule</strong>. This simple visual framework works at home, at restaurants, or when travelling.
+          Instead of weighing every gram on a digital kitchen scale, use the evidence-based <strong>Balanced Plate Rule</strong>. This simple visual framework works at home, at restaurants, or when travelling, reinforcing the foundational habit-building principles introduced on our{' '}
+          <Link to="/" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner fitness guide homepage
+          </Link>
+          .
         </p>
 
         {/* Interactive Plate Explorer */}
@@ -286,7 +316,11 @@ export function NutritionGuidePage() {
               <div className="space-y-2">
                 <h4 className="font-bold text-stone-950 text-base">One Quarter: Lean or Plant-Based Protein</h4>
                 <p className="text-stone-700">
-                  Roughly the size and thickness of your palm (approx. 20–30g). Examples include baked chicken breast, salmon, firm tofu, tempeh, 3 eggs, or Greek yogurt. This triggers muscle protein synthesis after your workout.
+                  Roughly the size and thickness of your palm (approx. 20–30g). Examples include baked chicken breast, salmon, firm tofu, tempeh, 3 eggs, or Greek yogurt. This triggers muscle protein synthesis after workouts from our{' '}
+                  <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                    beginner workout guide
+                  </Link>
+                  .
                 </p>
                 <p className="text-xs text-stone-500 font-medium">
                   <strong>Practical Tip:</strong> Include a modest palm-sized portion with each of your 3 daily meals.
@@ -325,7 +359,11 @@ export function NutritionGuidePage() {
           Hydration and Everyday Food Choices
         </h2>
         <p>
-          Even mild dehydration of 1–2% body weight can reduce exercise strength, cause premature fatigue, and trigger headaches. Water is also essential for nutrient transportation and lubricating joints.
+          Even mild dehydration of 1–2% body weight can reduce exercise strength, cause premature fatigue, and trigger headaches. Water is also essential for nutrient transportation and lubricating joints. Neglecting hydration and sleep while exercising is one of the classic{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          .
         </p>
 
         {/* Interactive Hydration Calculator */}
@@ -437,10 +475,18 @@ export function NutritionGuidePage() {
           Nutrition Habits That Support Exercise Recovery
         </h2>
         <p>
-          Recovery begins the moment your workout ends. Consuming a source of quality protein paired with carbohydrates within 1 to 2 hours helps initiate muscle repair and restock glycogen stores. To see how recovery nutrition pairs with weekly training, follow the schedule in our <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">beginner workout guide</Link>.
+          Recovery begins the moment your workout ends. Consuming a source of quality protein paired with carbohydrates within 1 to 2 hours helps initiate muscle repair and restock glycogen stores. To see how recovery nutrition pairs with weekly training, follow the schedule in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          .
         </p>
         <p>
-          Avoid skipping dinner after an evening workout in the false belief that going to bed starving burns more fat. In reality, under-fueling impairs sleep quality, spikes the stress hormone cortisol, and can leave you sluggish the next morning.
+          Avoid skipping dinner after an evening workout in the false belief that going to bed starving burns more fat. Chronic under-fueling and overtraining are two dangerous traps explored in our guide on{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          —in reality, under-fueling impairs sleep quality, spikes cortisol, and leaves you sluggish the next morning.
         </p>
       </section>
 
@@ -453,7 +499,11 @@ export function NutritionGuidePage() {
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-bold text-stone-950 mb-1 text-base">Myth 1: Supplements are compulsory to make fitness progress</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              <strong>The Reality:</strong> Supplements are merely intended to supplement what might be missing in a diet. If you eat wholesome real foods, you do not need expensive BCAAs, fat burners, or stimulant pre-workouts. Save your money for quality grocery staples.
+              <strong>The Reality:</strong> Supplements are merely intended to supplement what might be missing in a diet. If you eat wholesome real foods, you do not need expensive BCAAs, fat burners, or stimulant pre-workouts. Save your money for quality grocery staples and invest your focus into mastering the five essential compound movements in our{' '}
+              <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                beginner workout guide
+              </Link>
+              .
             </p>
           </div>
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
@@ -471,7 +521,11 @@ export function NutritionGuidePage() {
         </div>
 
         <p className="text-sm text-stone-600 pt-2">
-          Want to ensure you aren't making common training or recovery mistakes? Check out our complete guide on <Link to="/fitness-mistakes-beginners" className="underline font-semibold text-emerald-800 hover:text-emerald-950">fitness mistakes beginners should avoid</Link>.
+          Want to ensure you aren't making common training or recovery mistakes? Check out our complete guide on{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          .
         </p>
       </section>
     </ArticleLayout>

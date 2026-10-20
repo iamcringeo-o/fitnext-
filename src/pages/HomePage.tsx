@@ -11,28 +11,66 @@ export function HomePage() {
   const homeFaqs: FaqItem[] = [
     {
       question: 'How should a beginner start their fitness journey?',
-      answer:
-        'Start with manageable physical activity, balanced meals, sufficient sleep, and a routine you can maintain consistently. Focus on creating positive daily habits like 20–30 minutes of gentle exercise and daily walking before worrying about advanced techniques or heavy weights.'
+      answer: (
+        <>
+          Start with manageable physical activity, balanced meals, sufficient sleep, and a routine you can maintain consistently. Explore our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">
+            beginner workout guide
+          </Link>{' '}
+          for an introductory 3-day split, and pair it with practical{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">
+            nutrition for beginners
+          </Link>{' '}
+          to build healthy momentum.
+        </>
+      ) as any
     },
     {
       question: 'What are the most essential fitness tips for beginners?',
-      answer:
-        'Prioritize consistency over intensity, learn proper movement mechanics before adding resistance, prioritize 7 to 9 hours of sleep, and stay well hydrated. Most importantly, track personal habits rather than comparing your Day 1 to someone else’s Year 5.'
+      answer: (
+        <>
+          Prioritize consistency over intensity, learn proper movement mechanics before adding resistance, prioritize 7 to 9 hours of sleep, and stay alert to common{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950">
+            fitness mistakes beginners should avoid
+          </Link>{' '}
+          such as doing too much too soon.
+        </>
+      ) as any
     },
     {
       question: 'How many days a week should beginners work out?',
-      answer:
-        'For most complete beginners, 3 non-consecutive days per week (such as Monday, Wednesday, and Friday) of full-body exercise is the sweet spot. This allows your muscles, tendons, and central nervous system 48 hours to recover and adapt, while leaving other days for light walking.'
+      answer: (
+        <>
+          For most complete beginners, 3 non-consecutive days per week (such as Monday, Wednesday, and Friday) of full-body exercise is the sweet spot. Follow the sample schedule in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">
+            beginner workout guide
+          </Link>{' '}
+          to allow your muscles, tendons, and central nervous system 48 hours to recover between sessions.
+        </>
+      ) as any
     },
     {
       question: 'Can beginners exercise and build strength at home?',
-      answer:
-        'Yes, absolutely. You do not need a commercial gym membership or expensive machines to build a strong foundation. Basic movements like chair squats, wall push-ups, floor glute bridges, and brisk neighborhood walks build substantial strength and cardiovascular endurance right at home.'
+      answer: (
+        <>
+          Yes, absolutely. You do not need a commercial gym membership or expensive machines to build a strong foundation. Basic movements like chair squats, wall push-ups, floor glute bridges, and brisk neighborhood walks—all demonstrated with beginner form cues in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          —build substantial strength and cardiovascular endurance right at home.
+        </>
+      ) as any
     },
     {
       question: 'Do beginners need supplements to make progress?',
-      answer:
-        'No. Beginners do not need protein powders, pre-workouts, fat burners, or complex supplement regimens. You can obtain all the protein, energy, vitamins, and minerals you need from wholesome, balanced grocery foods like poultry, eggs, fish, beans, tofu, whole grains, vegetables, and water.'
+      answer: (
+        <>
+          No. Beginners do not need protein powders, pre-workouts, or fat burners. Learn how to build a nourishing plate with everyday grocery foods in our guide to{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">
+            nutrition for beginners
+          </Link>.
+        </>
+      ) as any
     }
   ];
 
@@ -69,9 +107,21 @@ export function HomePage() {
                 Your Beginner’s Guide to Fitness
               </h1>
 
-              {/* Supporting text with natural keyword integration */}
+              {/* Supporting text with natural keyword integration and internal links */}
               <p className="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl font-normal">
-                Discover our comprehensive <strong>beginner fitness guide</strong> filled with actionable <strong>fitness tips for beginners</strong>. Learn safe starting workouts, balanced nutrition, and sustainable habits through simple, practical guides.
+                Discover our comprehensive{' '}
+                <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  beginner workout guide
+                </Link>
+                , core principles of{' '}
+                <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  nutrition for beginners
+                </Link>
+                , and actionable fitness tips for beginners. Learn safe starting workouts, balanced meal habits, and how to sidestep common{' '}
+                <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  fitness mistakes beginners should avoid
+                </Link>{' '}
+                through simple, practical guides.
               </p>
 
               {/* Action Buttons */}
@@ -145,10 +195,26 @@ export function HomePage() {
                 Walking into the world of fitness today can feel intimidating. Between aggressive social media influencers, complicated gym machines, and confusing nutrition dogma, most beginners quit before they even start.
               </p>
               <p>
-                At FitStart, we believe that fitness is a long-term skill, not a 30-day punishment. You don’t need two hours in the gym each day, nor do you need unproven supplements or starvation diets. All you need is a manageable weekly structure, safe movement patterns, and balanced nutrition that fuels your daily life.
+                At FitStart, we believe that fitness is a long-term skill, not a 30-day punishment. You don’t need two hours in the gym each day, nor do you need unproven supplements or starvation diets—two common traps analyzed in our guide to{' '}
+                <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  nutrition for beginners
+                </Link>
+                . All you need is a manageable weekly structure, safe movement patterns, and balanced nutrition that fuels your daily life.
               </p>
               <p>
-                Whether you haven’t exercised in years or you’re picking up your very first pair of light dumbbells, our four-part curriculum is built to give you confidence from day one. Follow our structured <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">beginner workout guide</Link>, discover sustainable <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">nutrition for beginners</Link>, and review critical <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950">fitness mistakes beginners should avoid</Link>.
+                Whether you haven’t exercised in years or you’re picking up your very first pair of light dumbbells, our four-part curriculum is built to give you confidence from day one. Follow our structured{' '}
+                <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  beginner workout guide
+                </Link>
+                , discover sustainable{' '}
+                <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  nutrition for beginners
+                </Link>
+                , and review critical{' '}
+                <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  fitness mistakes beginners should avoid
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -210,7 +276,11 @@ export function HomePage() {
                   Move Consistently
                 </h3>
                 <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-6">
-                  Dedicate three days a week to full-body movement. Learn basic mechanics like squats, push-ups, and hinges with bodyweight first, allowing muscle memory and joint stability to develop naturally.
+                  Dedicate three days a week to full-body movement. Learn basic mechanics like squats, push-ups, and hinges with bodyweight first, following the step-by-step progressions in our{' '}
+                  <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                    beginner workout guide
+                  </Link>
+                  {' '}to develop muscle memory and joint stability safely.
                 </p>
               </div>
               <Link
@@ -235,7 +305,11 @@ export function HomePage() {
                   Eat Balanced Meals
                 </h3>
                 <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-6">
-                  Build plates with lean protein, complex carbohydrates, and colorful vegetables. Fuel your workouts and support recovery with wholesome food and plenty of water instead of harsh caloric cuts.
+                  Build plates with lean protein, complex carbohydrates, and colorful vegetables. Fuel your workouts and support recovery with wholesome food and plenty of water instead of harsh caloric cuts, following the principles of{' '}
+                  <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                    nutrition for beginners
+                  </Link>
+                  .
                 </p>
               </div>
               <Link
@@ -260,7 +334,11 @@ export function HomePage() {
                   Build Healthy Habits
                 </h3>
                 <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-6">
-                  Fitness is sustained by systems, not temporary bursts of willpower. Prioritize 7 to 9 hours of quality sleep, track small wins, and avoid common traps like comparing your Day 1 to someone else’s Year 5.
+                  Fitness is sustained by systems, not temporary bursts of willpower. Prioritize 7 to 9 hours of quality sleep, track small wins, and avoid common traps like doing too much too soon—one of the classic{' '}
+                  <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                    fitness mistakes beginners should avoid
+                  </Link>
+                  .
                 </p>
               </div>
               <Link
@@ -287,7 +365,19 @@ export function HomePage() {
               Beginner-Friendly Weekly Fitness Overview
             </h2>
             <p className="text-stone-600 text-base sm:text-lg leading-relaxed">
-              Here is what an optimal, sustainable starter week looks like. Notice the balance between active movement days and dedicated recovery periods.
+              Here is what an optimal, sustainable starter week looks like. Notice the balance between active movement days and dedicated recovery periods. Learn each exercise in our{' '}
+              <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                beginner workout guide
+              </Link>
+              , support recovery with our guide to{' '}
+              <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                nutrition for beginners
+              </Link>
+              , and safeguard against burnout by learning the{' '}
+              <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                fitness mistakes beginners should avoid
+              </Link>
+              .
             </p>
           </div>
 

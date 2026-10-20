@@ -35,8 +35,19 @@ export function FitnessMistakesPage() {
   const faqs: FaqItem[] = [
     {
       question: 'What are common fitness mistakes beginners make?',
-      answer:
-        'Common mistakes include doing too much too soon, ignoring recovery, using poor technique, and expecting immediate results. Addressing these early prevents burnout and injury.'
+      answer: (
+        <>
+          Common mistakes include doing too much too soon, ignoring recovery, using poor technique, and expecting immediate results. Following a structured{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          {' '}and maintaining balanced{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            nutrition for beginners
+          </Link>
+          {' '}builds sustainable consistency without burnout or injury.
+        </>
+      ) as any
     },
     {
       question: 'How do I know if I am doing too much too soon?',
@@ -45,8 +56,15 @@ export function FitnessMistakesPage() {
     },
     {
       question: 'How long should I stick with a beginner workout plan before changing exercises?',
-      answer:
-        'Stick with the same core beginner workout plan for at least 8 to 12 weeks. Changing exercises every single workout prevents your nervous system from mastering movement patterns and makes it impossible to measure steady strength progression.'
+      answer: (
+        <>
+          Stick with the same core{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout plan
+          </Link>
+          {' '}for at least 8 to 12 weeks. Changing exercises every single workout prevents your nervous system from mastering movement patterns and makes it impossible to measure steady strength progression.
+        </>
+      ) as any
     },
     {
       question: 'What should I do if an exercise causes discomfort in my joints?',
@@ -79,7 +97,11 @@ export function FitnessMistakesPage() {
       article={article}
       intro={
         <p>
-          Starting a new fitness journey is exciting, but high enthusiasm without proper guidance often leads to burnout, frustrating plateaus, or unnecessary injury. In this guide on <strong>fitness mistakes beginners</strong> should avoid, we analyze the 10 most common pitfalls and give you practical, actionable <strong>beginner fitness tips</strong> to build lifelong healthy habits.
+          Starting a new fitness journey is exciting, but high enthusiasm without proper guidance often leads to burnout, frustrating plateaus, or unnecessary injury. In this guide on <strong>fitness mistakes beginners</strong> should avoid, we analyze the 10 most common pitfalls and give you practical, actionable <strong>beginner fitness tips</strong> to build lifelong healthy habits. Start on solid ground by reviewing our foundational{' '}
+          <Link to="/" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner fitness guide homepage
+          </Link>
+          .
         </p>
       }
       toc={toc}
@@ -101,7 +123,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> In January or on a motivated Monday, beginners often decide to work out 6 or 7 days a week for 90 minutes per session. Because muscle tendons, ligaments, and joints adapt much slower than enthusiasm, this rapid spike in volume results in severe muscle soreness, joint inflammation, and eventual abandonment within three weeks.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Commit to <strong>just 3 days per week</strong> of 25–35 minute sessions. It is far better to finish a workout feeling energized and wanting a little more than to be so crippled with soreness that you cannot walk down stairs the next day.
+          <strong className="text-emerald-950">Practical Solution:</strong> Commit to <strong>just 3 days per week</strong> of 25–35 minute sessions. Following the structured 3-day progression in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          {' '}gives your muscles, tendons, and nervous system 48 hours of recovery between training sessions. It is far better to finish a workout feeling energized and wanting a little more than to be so crippled with soreness that you cannot walk down stairs the next day.
         </div>
       </section>
 
@@ -119,7 +145,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Going directly from sitting at a computer desk into heavy squats or brisk sprints catches cold muscle tissue unprepared. Cold tendons are less elastic, leading to preventable strains in the lower back, hamstrings, and shoulders.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Dedicate 5 full minutes to dynamic mobility (arm swings, cat-cow spine flexion, hip circles, and marching). Refer to the warm-up protocol in our <Link to="/beginner-workout-guide#why-warmups-matter" className="underline font-semibold hover:text-emerald-900">beginner workout guide</Link>.
+          <strong className="text-emerald-950">Practical Solution:</strong> Dedicate 5 full minutes to dynamic mobility (arm swings, cat-cow spine flexion, hip circles, and marching). Refer to the warm-up protocol in our{' '}
+          <Link to="/beginner-workout-guide#why-warmups-matter" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          .
         </div>
       </section>
 
@@ -137,7 +167,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Performing exercises with rounded lower backs, collapsing knees, or jerky momentum shifts stress away from target muscles and concentrates shear forces directly onto spinal discs and knee ligaments.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Leave your ego at the door. Practice movements slowly with bodyweight in front of a mirror or record a video of yourself on your phone to check alignment. Only add resistance once movement mechanics are pristine.
+          <strong className="text-emerald-950">Practical Solution:</strong> Leave your ego at the door. Practice movements slowly with bodyweight using the step-by-step form cues in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          , or record a video of yourself on your phone to check alignment. Only add resistance once movement mechanics are pristine.
         </div>
       </section>
 
@@ -173,7 +207,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Training the same muscles every single day prevents the rebuilding of damaged fibers. Without recovery, performance drops, chronic fatigue sets in, and immune function weakens.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Treat your rest days as an active part of your fitness program. Take a relaxing walk, practice light stretching, and allow 48 hours before working the same muscle groups again.
+          <strong className="text-emerald-950">Practical Solution:</strong> Treat your rest days as an active part of your fitness program. Take a relaxing walk, practice light stretching, allow 48 hours before working the same muscle groups again, and replenish depleted glycogen with balanced meals from our guide to{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            nutrition for beginners
+          </Link>
+          .
         </div>
       </section>
 
@@ -209,7 +247,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Slashing calories to 1,000 per day or completely eliminating entire macronutrient groups leaves you exhausted, irritable, and prone to rebound binge-eating.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Instead of crash dieting, explore our guide on <Link to="/beginner-nutrition-guide" className="underline font-semibold hover:text-emerald-900">nutrition for beginners</Link> and adopt a sustainable balanced plate. Eat wholesome carbs, lean proteins, and healthy fats that fuel your activity.
+          <strong className="text-emerald-950">Practical Solution:</strong> Instead of crash dieting, explore our guide on{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            nutrition for beginners
+          </Link>
+          {' '}and adopt a sustainable balanced plate. Eat wholesome carbs, lean proteins, and healthy fats that fuel your activity.
         </div>
       </section>
 
@@ -227,7 +269,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Getting 5 hours of sleep while trying to exercise places severe stress on your nervous system. Sleep is when human growth hormone and cellular repair peak. Dehydration reduces muscular power output and causes dizziness.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Aim for 7 to 9 hours of quality sleep each night. Keep a water bottle at your workspace and aim for pale lemonade-colored urine throughout the day.
+          <strong className="text-emerald-950">Practical Solution:</strong> Aim for 7 to 9 hours of quality sleep each night. Calculate your daily fluid requirements using the interactive hydration tool in our{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner nutrition guide
+          </Link>
+          {' '}and aim for pale lemonade-colored urine throughout the day.
         </div>
       </section>
 
@@ -245,7 +291,11 @@ export function FitnessMistakesPage() {
           <strong>Why it’s a problem:</strong> Switching your workout routine every week prevents neuromuscular adaptation. You never become skilled at squats, push-ups, or hinges, making it impossible to apply progressive overload.
         </p>
         <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 text-sm">
-          <strong className="text-emerald-950">Practical Solution:</strong> Pick one simple full-body routine (like the 3-day split in our <Link to="/beginner-workout-guide" className="underline font-semibold hover:text-emerald-900">beginner workout guide</Link>) and stick to it for at least 8 to 12 weeks before introducing new variations.
+          <strong className="text-emerald-950">Practical Solution:</strong> Pick one simple full-body routine (like the 3-day split in our{' '}
+          <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner workout guide
+          </Link>
+          ) and stick to it for at least 8 to 12 weeks before introducing new variations.
         </div>
       </section>
 
@@ -280,13 +330,21 @@ export function FitnessMistakesPage() {
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-bold text-stone-900 text-base mb-1">1. Habit Stacking</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              Anchor your new workout to an existing daily routine: "Immediately after pouring my morning coffee, I will do my 5-minute warm-up mobility routine."
+              Anchor your new workout to an existing daily routine: "Immediately after pouring my morning coffee, I will do my 5-minute warm-up mobility routine from the{' '}
+              <Link to="/beginner-workout-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                beginner workout guide
+              </Link>
+              ."
             </p>
           </div>
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-bold text-stone-900 text-base mb-1">2. The 2-Minute Rule</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              On days when you feel unmotivated, tell yourself you will only do the 5-minute warm-up. Ninety percent of the time, once you start moving, you will complete the workout.
+              On days when you feel unmotivated, review the foundational three pillars on our{' '}
+              <Link to="/" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                beginner fitness guide homepage
+              </Link>
+              {' '}and commit to just 2 minutes of light movement.
             </p>
           </div>
           <div className="p-5 rounded-lg border border-stone-200 bg-white">

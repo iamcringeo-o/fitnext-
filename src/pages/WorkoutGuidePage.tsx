@@ -69,8 +69,19 @@ export function WorkoutGuidePage() {
     },
     {
       question: 'Should beginners feel sore after every workout to build muscle?',
-      answer:
-        'No. Mild muscle soreness (DOMS) is common when starting unfamiliar exercises, but crippling soreness is a warning sign that you did too much too soon. Progressive consistency and joint comfort are much better indicators of success than soreness.'
+      answer: (
+        <>
+          No. Mild muscle soreness (DOMS) is common when starting unfamiliar exercises, but crippling soreness is a warning sign that you did too much too soon, which is among the most frequent{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          . Proper post-workout nourishment, as outlined in our{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            nutrition for beginners
+          </Link>
+          {' '}guide, also accelerates recovery.
+        </>
+      ) as any
     },
     {
       question: 'What basic equipment do I need for this beginner workout plan?',
@@ -130,13 +141,21 @@ export function WorkoutGuidePage() {
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-semibold text-stone-900 mb-2">3. Hydration Readiness</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              Drink 12–16 ounces of water 30 to 45 minutes prior to moving. Keep a reusable water bottle nearby to take small sips between sets.
+              Drink 12–16 ounces of water 30 to 45 minutes prior to moving. Keep a reusable water bottle nearby to take small sips between sets. For optimal daily hydration targets and meal timing, explore our comprehensive guide on{' '}
+              <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                nutrition for beginners
+              </Link>
+              .
             </p>
           </div>
           <div className="p-5 rounded-lg border border-stone-200 bg-white">
             <h3 className="font-semibold text-stone-900 mb-2">4. Medical Readiness Check</h3>
             <p className="text-sm text-stone-600 leading-relaxed">
-              If you have been sedentary for several years or manage chronic medical conditions (like hypertension or diabetes), consult with your physician prior to beginning.
+              If you have been sedentary for several years or manage chronic medical conditions (like hypertension or diabetes), consult with your physician prior to beginning. Learning how to distinguish between healthy muscle effort and dangerous warning signs is covered in our breakdown of{' '}
+              <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                fitness mistakes beginners should avoid
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -148,7 +167,11 @@ export function WorkoutGuidePage() {
           Warm-Ups and Why They Matter
         </h2>
         <p>
-          One of the quickest ways for a beginner to develop joint discomfort or strain a muscle is to jump straight into intense exercise cold. A warm-up is not an optional chore—it is your biological ramp-up sequence.
+          One of the quickest ways for a beginner to develop joint discomfort or strain a muscle is to jump straight into intense exercise cold. In fact, skipping dynamic warm-ups is one of the top{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          . A warm-up is not an optional chore—it is your biological ramp-up sequence.
         </p>
         <p>
           During a 5-minute dynamic warm-up, your heart rate gradually elevates, synovial fluid lubricates your joint capsules, and neural connections to your muscles awaken. <em>Static stretching</em> (holding a stretch in place for 30 seconds) is best reserved for after the workout; before your workout, stick strictly to <strong>dynamic mobility</strong>.
@@ -336,7 +359,11 @@ export function WorkoutGuidePage() {
           Sample Three-Day Beginner Routine with Rest Days
         </h2>
         <p>
-          This balanced <strong>beginner workout plan</strong> distributes exercise across 3 non-consecutive days. Each workout hits the entire body so you never experience extreme localized fatigue.
+          This balanced <strong>beginner workout plan</strong> distributes exercise across 3 non-consecutive days. Each workout hits the entire body so you never experience extreme localized fatigue. On non-lifting recovery days, support cellular repair with balanced plates from our{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner nutrition guide
+          </Link>
+          {' '}and keep moving lightly.
         </p>
 
         {/* Responsive Table */}
@@ -407,7 +434,11 @@ export function WorkoutGuidePage() {
                 <span>Interactive Practice: Set Rest Timer</span>
               </h3>
               <p className="text-xs text-stone-600">
-                Beginners often rush their rest. Practice timing 60 or 90 seconds of breathing between exercise sets.
+                Beginners often rush their rest intervals. Cutting recovery short between sets is one of the classic{' '}
+                <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                  fitness mistakes beginners should avoid
+                </Link>
+                . Practice timing 60 or 90 seconds of breathing between exercise sets.
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -478,7 +509,11 @@ export function WorkoutGuidePage() {
           </li>
         </ul>
         <p>
-          For your first 4 weeks, aim for <strong>2 sets of 8 to 10 reps</strong> per exercise. Do not train to muscular failure (the point where you collapse or cannot finish another rep). Instead, stop each set when you still feel like you could have performed 2 to 3 more clean repetitions with good form. In sports science, this is known as keeping 2–3 <em>Reps in Reserve (RIR)</em> or working at an <em>RPE of 6–7</em>.
+          For your first 4 weeks, aim for <strong>2 sets of 8 to 10 reps</strong> per exercise. Do not train to muscular failure (the point where you collapse or cannot finish another rep). Training to total exhaustion on every set is another of the{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          , as it causes excessive fatigue without added muscle benefit. Instead, stop each set when you still feel like you could have performed 2 to 3 more clean repetitions with good form. In sports science, this is known as keeping 2–3 <em>Reps in Reserve (RIR)</em> or working at an <em>RPE of 6–7</em>.
         </p>
       </section>
 
@@ -494,7 +529,11 @@ export function WorkoutGuidePage() {
           <div className="p-4 rounded-lg bg-stone-100/70 border border-stone-200">
             <h3 className="font-semibold text-stone-900 text-sm mb-1">48-Hour Muscle Rule</h3>
             <p className="text-xs text-stone-600 leading-relaxed">
-              Always leave at least 48 hours before exercising the same major muscle groups with resistance again.
+              Always leave at least 48 hours before exercising the same major muscle groups with resistance again. Overtraining without sufficient downtime is one of the classic{' '}
+              <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+                fitness mistakes beginners should avoid
+              </Link>
+              .
             </p>
           </div>
           <div className="p-4 rounded-lg bg-stone-100/70 border border-stone-200">
@@ -511,7 +550,15 @@ export function WorkoutGuidePage() {
           </div>
         </div>
         <p className="text-sm text-stone-700">
-          Remember that muscle recovery also depends on what you eat. Read our companion guide on <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950">nutrition for beginners</Link> to learn how balanced meals supply the necessary protein, complex carbs, and hydration.
+          Remember that muscle recovery also depends on what you eat. Read our companion guide on{' '}
+          <Link to="/beginner-nutrition-guide" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            nutrition for beginners
+          </Link>
+          {' '}to learn how balanced meals supply the necessary protein, complex carbs, and hydration. You can also return to our{' '}
+          <Link to="/" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            beginner fitness guide homepage
+          </Link>
+          {' '}to review the full weekly routine calendar.
         </p>
       </section>
 
@@ -521,7 +568,11 @@ export function WorkoutGuidePage() {
           How to Progress Gradually Without Increasing Difficulty Too Quickly
         </h2>
         <p>
-          Your body adapts to demands gradually. To continue getting stronger, you use <strong>progressive overload</strong>—making the workout slightly more challenging over time. However, beginners often make the mistake of adding heavy weight prematurely.
+          Your body adapts to demands gradually. To continue getting stronger, you use <strong>progressive overload</strong>—making the workout slightly more challenging over time. However, beginners often make the mistake of adding heavy weight prematurely or changing routines constantly, which are classic{' '}
+          <Link to="/fitness-mistakes-beginners" className="font-semibold text-emerald-800 underline hover:text-emerald-950 transition-colors">
+            fitness mistakes beginners should avoid
+          </Link>
+          .
         </p>
         <p>
           Follow this 4-step hierarchy of progression:
